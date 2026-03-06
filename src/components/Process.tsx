@@ -4,33 +4,33 @@ import { useRef } from "react";
 const steps = [
   {
     number: "01",
-    title: "Consultation",
+    title: "Discovery & Strategy",
     description:
-      "We start by understanding your vision, budget, and expectations to create a tailored plan.",
+      "We begin by understanding your business goals, target audience, and challenges to craft the right digital strategy.",
   },
   {
     number: "02",
-    title: "Concept Design",
+    title: "Planning & UI/UX Design",
     description:
-      "Our team crafts innovative design concepts exploring spaces, materials, and aesthetics.",
+      "Our team designs intuitive user interfaces and smooth user experiences that align with your brand and customers.",
   },
   {
     number: "03",
-    title: "3D Modelling & Visualization",
+    title: "Web Application Development",
     description:
-      "We bring your vision to life with detailed 3D models and realistic renderings.",
+      "We build scalable web applications using modern technologies to ensure performance, security, and reliability.",
   },
   {
     number: "04",
-    title: "Design Development",
+    title: "AI Marketing Automation",
     description:
-      "Detailed drawings and specifications are finalized to ensure flawless execution.",
+      "We implement AI-powered marketing automation tools that help startups and small businesses generate leads and grow faster.",
   },
   {
     number: "05",
-    title: "Execution & Delivery",
+    title: "Launch & Growth Optimization",
     description:
-      "We manage construction and quality checks to deliver your project on time.",
+      "After launch, we continuously optimize performance, analytics, and automation to scale your business efficiently.",
   },
 ];
 
@@ -56,20 +56,24 @@ const Process = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <p className="text-xs uppercase tracking-[0.3em] text-blue-300 font-body font-semibold mb-5">
+          <p className="text-xs uppercase tracking-[0.3em] text-blue-300 font-semibold mb-5">
             How We Work
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-7">
-            Our 5-Step Process
+
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-7">
+            Our 5-Step Digital Process
           </h2>
-          <p className="font-body text-base text-white/60 max-w-xl mx-auto font-light leading-relaxed">
-            A structured, client-focused process that ensures creativity, precision, and excellence.
+
+          <p className="text-base text-white/60 max-w-xl mx-auto font-light leading-relaxed">
+            A streamlined process that helps startups and small businesses
+            launch powerful web applications and scale faster using AI-driven
+            marketing automation.
           </p>
         </motion.div>
 
         {/* Steps */}
         <div className="relative">
-          {/* Desktop horizontal layout */}
+          {/* Desktop layout */}
           <div className="hidden md:grid md:grid-cols-5 gap-8">
             {steps.map((step, i) => (
               <motion.div
@@ -80,21 +84,22 @@ const Process = () => {
                 className="relative group flex flex-col items-center text-center hover:scale-105 transition-transform duration-500"
               >
                 {/* Step Number */}
-                <div className="text-6xl font-display font-bold text-white/10 mb-6 pointer-events-none select-none">
+                <div className="text-6xl font-bold text-white/10 mb-6 pointer-events-none select-none">
                   {step.number}
                 </div>
 
-                {/* Glass Card */}
+                {/* Card */}
                 <div className="bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 md:p-8 w-full h-full flex flex-col justify-start shadow-xl hover:shadow-2xl transition-all">
-                  <h3 className="font-display text-lg md:text-xl font-semibold text-white mb-3">
+                  <h3 className="text-lg md:text-xl font-semibold text-white mb-3">
                     {step.title}
                   </h3>
-                  <p className="font-body text-sm md:text-base text-white/70 leading-relaxed flex-grow">
+
+                  <p className="text-sm md:text-base text-white/70 leading-relaxed flex-grow">
                     {step.description}
                   </p>
                 </div>
 
-                {/* Horizontal connecting line */}
+                {/* Horizontal line */}
                 {i < steps.length - 1 && (
                   <div className="absolute top-1/2 right-0 w-full h-px bg-blue-500/20 translate-x-full" />
                 )}
@@ -102,7 +107,7 @@ const Process = () => {
             ))}
           </div>
 
-          {/* Mobile vertical layout */}
+          {/* Mobile layout */}
           <div className="md:hidden flex flex-col gap-12">
             {steps.map((step, i) => (
               <motion.div
@@ -112,9 +117,10 @@ const Process = () => {
                 transition={{ duration: 0.6, delay: i * 0.15 }}
                 className="relative flex items-start gap-6"
               >
-                {/* Vertical Connector & Dot */}
+                {/* Dot */}
                 <div className="flex flex-col items-center">
                   <div className="w-6 h-6 rounded-full bg-blue-500 relative z-10" />
+
                   {i < steps.length - 1 && (
                     <div className="w-px h-full bg-blue-500/30 mt-0.5" />
                   )}
@@ -122,13 +128,15 @@ const Process = () => {
 
                 {/* Card */}
                 <div className="flex-1 bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-6 shadow-xl">
-                  <div className="text-3xl font-display font-bold text-white/20 mb-4 select-none">
+                  <div className="text-3xl font-bold text-white/20 mb-4 select-none">
                     {step.number}
                   </div>
-                  <h3 className="font-display text-lg font-semibold text-white mb-2">
+
+                  <h3 className="text-lg font-semibold text-white mb-2">
                     {step.title}
                   </h3>
-                  <p className="font-body text-sm text-white/70 leading-relaxed">
+
+                  <p className="text-sm text-white/70 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
