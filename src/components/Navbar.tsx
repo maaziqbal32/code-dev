@@ -28,14 +28,24 @@ const Navbar = () => {
 
   const handleNavClick = (href: string) => {
     setMobileOpen(false);
-    if (location.pathname !== "/" && href.startsWith("/#")) {
+    
+    // Handle home navigation
+    if (href === "/" || href === "/#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
+    
+    // Extract section ID from href
     const id = href.replace("/#", "");
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
+    
+    // If on homepage, scroll directly
+    if (location.pathname === "/") {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
     }
+    // If not on homepage, navigate to homepage first (router-dom Link handles this)
   };
 
   return (
@@ -53,7 +63,7 @@ const Navbar = () => {
           <Link to="/" className="flex flex-col items-center gap-1 group">
             <img
               src="/company-logo.png"
-              alt="AMZY Studio Logo"
+              alt="devcode logo"
               className="h-24 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </Link>

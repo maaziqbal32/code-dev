@@ -83,7 +83,7 @@ const ServicesCarousel = () => {
   };
 
   return (
-    <section className="relative py-28 bg-gray-900 overflow-hidden">
+    <section id="services" className="relative py-28 bg-gray-900 overflow-hidden">
       {/* Heading */}
       <div className="text-center mb-20">
         <span className="text-blue-300 uppercase tracking-[0.3em] text-sm font-medium">

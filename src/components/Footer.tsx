@@ -1,6 +1,28 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+
+  const handleNavClick = (href: string) => {
+    // Handle home navigation
+    if (href === "/" || href === "/#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    // Extract section ID from href
+    const id = href.replace("/#", "");
+
+    // If on homepage, scroll directly
+    if (location.pathname === "/") {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    // If not on homepage, navigate to homepage first (router-dom Link handles this)
+  };
+
   return (
     <footer className="bg-foreground py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -10,7 +32,7 @@ const Footer = () => {
           {/* Logo & About */}
           <div className="md:col-span-1">
             <Link to="/" className="font-display text-2xl font-bold text-background">
-              Growth<span className="text-primary">AI</span>
+              Code<span className="text-primary">Dev</span>
             </Link>
 
             <p className="font-body text-xs sm:text-sm text-background/40 mt-5 leading-[1.8] font-light">
@@ -27,15 +49,19 @@ const Footer = () => {
             </h4>
 
             <div className="space-y-4">
-              {["Home", "About", "Services", "Testimonials", "Contact"].map((item) => (
-                <Link
-                  key={item}
-                  to={`/#${item.toLowerCase()}`}
-                  className="block font-body text-sm text-background/40 hover:text-primary transition-colors duration-300 font-light"
-                >
-                  {item}
-                </Link>
-              ))}
+              {["Home", "About", "Services", "Testimonials", "Contact"].map((item) => {
+                const href = item === "Home" ? "/" : `/#${item.toLowerCase()}`;
+                return (
+                  <Link
+                    key={item}
+                    to={href}
+                    onClick={() => handleNavClick(href)}
+                    className="block font-body text-sm text-background/40 hover:text-primary transition-colors duration-300 font-light"
+                  >
+                    {item}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 

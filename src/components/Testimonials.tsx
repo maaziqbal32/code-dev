@@ -28,7 +28,7 @@ const Testimonials = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-28 md:py-40 bg-background">
+    <section id="testimonials" className="py-28 md:py-40 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Heading */}
         <motion.div
