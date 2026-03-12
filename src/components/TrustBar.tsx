@@ -58,7 +58,7 @@ const TrustBar = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-white/70 uppercase tracking-[0.3em] text-sm font-medium mb-4 block"
+          className="text-white/90 uppercase tracking-[0.3em] text-sm font-medium mb-4 block"
         >
           Proven Results
         </motion.span>
@@ -67,7 +67,7 @@ const TrustBar = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-white/70 text-lg md:text-xl font-light max-w-3xl mx-auto mb-16"
+          className="text-white/90 text-lg md:text-xl font-light max-w-3xl mx-auto mb-16"
         >
           Delivering powerful web applications and AI marketing automation
           solutions that help startups and small businesses grow faster.
@@ -98,7 +98,7 @@ const TrustBar = () => {
               </div>
 
               {/* label */}
-              <div className="text-white/70 text-xs uppercase tracking-widest">
+              <div className="text-white/90 text-xs uppercase tracking-widest">
                 {stat.label}
               </div>
             </motion.div>

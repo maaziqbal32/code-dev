@@ -90,7 +90,7 @@ const ServicesCarousel = () => {
           Our Services
         </span>
 
-        <h2 className="mt-4 text-4xl md:text-5xl font-semibold text-white">
+        <h2 className="mt-4 text-2xl md:text-5xl font-semibold text-white font-sans">
           Smart Technology Solutions For Growing Businesses
         </h2>
       </div>
@@ -117,7 +117,7 @@ const ServicesCarousel = () => {
                   className={`h-1 w-full mb-6 rounded-full bg-gradient-to-r ${service.color}`}
                 />
 
-                <h3 className="text-xl md:text-2xl font-semibold text-white mb-4">
+                <h3 className="text-xl md:text-2xl font-semibold text-white mb-4 font-poppins">
                   {service.title}
                 </h3>
 

@@ -19,7 +19,7 @@ const WhatsAppButton = () => {
       className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-shadow duration-300 hover:shadow-xl"
       style={{ backgroundColor: "#25D366" }}
     >
-      <MessageCircle className="text-white" size={26} fill="white" strokeWidth={0} />
+      <img className="h-12 w-12" src="/whatsapp.png" alt="WhatsApp" />
     </motion.a>
   );
 };

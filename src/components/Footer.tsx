@@ -24,10 +24,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-foreground py-20 md:py-24">
+    <footer className="bg-foreground py-10 md:py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-14 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-14 mb-10">
 
           {/* Logo & About */}
           <div className="md:col-span-1">

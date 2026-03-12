@@ -42,7 +42,7 @@ const Testimonials = () => {
             Client Testimonials
           </p>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground font-poppins">
             What Our Clients Say
           </h2>
 

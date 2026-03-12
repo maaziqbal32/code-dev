@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -13,8 +18,10 @@ export default {
       },
     },
     fontFamily: {
-      display: ['Playfair Display', 'Georgia', 'serif'],
-      body: ['Inter', 'system-ui', 'sans-serif'],
+      display: ["Playfair Display", "Georgia", "serif"],
+      body: ["Inter", "system-ui", "sans-serif"],
+      sans: ['"Open Sans"', "system-ui", "sans-serif"],
+      poppins: ['"Poppins"', "system-ui", "sans-serif"],
     },
     extend: {
       colors: {

@@ -16,7 +16,7 @@ const About = () => {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <p className="text-xs uppercase tracking-[0.3em] text-primary font-semibold mb-5">
+            <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-primary font-semibold mb-5">
               About Us
             </p>
 
@@ -26,7 +26,7 @@ const About = () => {
               <span className="italic font-normal">Digital Solutions</span>
             </h2>
 
-            <div className="space-y-6 text-muted-foreground leading-[1.8] font-light">
+            <div className="space-y-6 text-muted-foreground leading-[1.8] font-regular">
               <p>
                 We are a modern software development company focused on building
                 powerful web applications and intelligent AI marketing
@@ -72,10 +72,10 @@ const About = () => {
               },
             ].map((item) => (
               <div key={item.title} className="border-l-2 border-primary pl-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">
+                <h3 className="text-xl font-semibold text-foreground mb-4 font-poppins">
                   {item.title}
                 </h3>
-                <p className="text-muted-foreground leading-[1.8] font-light">
+                <p className="text-muted-foreground leading-[1.8] font-regular">
                   {item.text}
                 </p>
               </div>

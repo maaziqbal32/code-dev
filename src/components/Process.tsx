@@ -60,11 +60,11 @@ const Process = () => {
             How We Work
           </p>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-7">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-7 font-sans">
             Our 5-Step Digital Process
           </h2>
 
-          <p className="text-base text-white/60 max-w-xl mx-auto font-light leading-relaxed">
+          <p className="text-base sm:text-lg text-white max-w-2xl mx-auto font-light leading-relaxed">
             A streamlined process that helps startups and small businesses
             launch powerful web applications and scale faster using AI-driven
             marketing automation.

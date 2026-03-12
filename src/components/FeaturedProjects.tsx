@@ -18,14 +18,18 @@ const FeaturedProjects = () => {
           transition={{ duration: 0.8 }}
           className="mb-20"
         >
-          <p className="text-xs uppercase tracking-[0.3em] text-primary font-body font-semibold mb-5">
+          <p className="text-xs uppercase tracking-[0.2rem] text-primary font-body font-semibold mb-5">
             Portfolio
           </p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-7">
+
+          <h2 className="font-poppins text-3xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-2 sm:mb-7 ">
             Featured Projects
           </h2>
-          <p className="font-body text-base text-muted-foreground max-w-lg font-light leading-relaxed">
-            A curated selection of our most impactful architectural work spanning residential, commercial, and cultural spaces.
+
+          <p className="font-body text-base text-muted-foreground max-w-lg font-regular leading-relaxed">
+            Innovative Software Solutions & AI Automation. Building powerful
+            web applications, AI marketing automation systems, and modern
+            digital experiences that help startups and businesses scale faster.
           </p>
         </motion.div>
 
@@ -54,14 +58,14 @@ const FeaturedProjects = () => {
                 </div>
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <h3 className="font-display text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                    <h3 className="font-poppins text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                       {project.title}
                     </h3>
-                    <p className="font-body text-sm text-muted-foreground mt-1 font-light">
+                    <p className="font-poppins text-sm text-muted-foreground mt-1 font-regular">
                       {project.location}
                     </p>
                   </div>
-                  <span className="font-body text-[10px] uppercase tracking-[0.15em] text-muted-foreground border border-border px-3 py-1.5 rounded-sm whitespace-nowrap">
+                  <span className="font-poppins text-[10px] uppercase tracking-[0.15em] text-muted-foreground border border-border px-3 py-1.5 rounded-sm whitespace-nowrap">
                     {project.category}
                   </span>
                 </div>

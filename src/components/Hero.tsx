@@ -11,7 +11,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative py-24 sm:min-h-screen flex items-center justify-center overflow-hidden mt-14">
       {/* Video Background */}
       <video
         autoPlay
@@ -34,12 +34,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/50" />
 
       {/* Hero Content */}
-      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center mt-[1rem]">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="text-xs uppercase tracking-[0.4em] text-white/70 mb-8 font-body font-medium"
+          className="text-xs uppercase tracking-[0.4em] text-white/70 mb-4 sm:mb-8 font-body font-medium"
         >
           Innovative Software Solutions & AI Automation
         </motion.p>
@@ -59,7 +59,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="font-body text-base md:text-lg text-white/70 max-w-xl mx-auto mb-14 leading-relaxed font-light"
+          className="font-body text-base md:text-lg text-white max-w-xl mx-auto mb-14 leading-relaxed font-regular"
         >
           We build powerful web applications and intelligent AI marketing
           automation systems that help startups and small businesses attract
