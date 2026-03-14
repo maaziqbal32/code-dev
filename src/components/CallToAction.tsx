@@ -40,7 +40,7 @@ const CallToAction = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-base text-white/80 max-w-xl mx-auto mb-12 font-light leading-relaxed"
+          className="text-base font-sans text-white/80 max-w-xl mx-auto mb-12 font-light leading-relaxed"
         >
           We build powerful web applications and intelligent AI marketing
           automation systems that help startups and small businesses attract
@@ -53,7 +53,7 @@ const CallToAction = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
           onClick={scrollToContact}
-          className="bg-white text-[#1A2B42] px-12 py-4 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-white/90 transition-all duration-300 rounded-sm hover:shadow-lg"
+          className="bg-white font-poppins text-[#1A2B42] px-12 py-4 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-white/90 transition-all duration-300 rounded-sm hover:shadow-lg"
         >
           Start Your Project
         </motion.button>

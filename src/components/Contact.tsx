@@ -62,7 +62,7 @@ const Contact = () => {
               </span>
             </h2>
 
-            <p className="text-muted-foreground leading-[1.8] mb-12 font-light">
+            <p className="text-muted-foreground font-poppins leading-[1.8] mb-12 font-light">
               Looking to build a powerful web application or automate your
               marketing with AI? Our team helps startups and small businesses
               grow faster through smart technology solutions.
@@ -71,21 +71,21 @@ const Contact = () => {
             {/* Contact Info */}
             <div className="space-y-7">
 
-              <div className="flex items-center gap-5">
+              <div className="flex items-center font-poppins gap-5">
                 <Mail className="text-primary" size={18} strokeWidth={1.5} />
                 <span className="text-sm text-foreground font-light">
-                  hello@youragency.com
+                  devcodes.system@gmail.com
                 </span>
               </div>
 
-              <div className="flex items-center gap-5">
+              <div className="flex items-center font-poppins gap-5">
                 <Phone className="text-primary" size={18} strokeWidth={1.5} />
                 <span className="text-sm text-foreground font-light">
                   +92 336 8531533
                 </span>
               </div>
 
-              <div className="flex items-center gap-5">
+              <div className="flex items-center font-poppins gap-5">
                 <MapPin className="text-primary" size={18} strokeWidth={1.5} />
                 <span className="text-sm text-foreground font-light">
                   Lahore, Pakistan
@@ -99,10 +99,11 @@ const Contact = () => {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-sm text-xs font-semibold tracking-[0.1em] uppercase text-white transition-all duration-300 hover:shadow-lg hover:scale-105"
+              className="font-poppins mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-sm text-xs font-semibold tracking-[0.1em] uppercase text-white transition-all duration-300 hover:shadow-lg hover:scale-105"
               style={{ backgroundColor: "#25D366" }}
             >
-              <MessageCircle size={18} fill="white" strokeWidth={0} />
+
+              <img className="h-8 w-8" src="whatsapp.png" alt="whatsapp" />
               Chat on WhatsApp
             </a>
 
@@ -132,7 +133,7 @@ const Contact = () => {
                 onChange={(e) =>
                   setFormData({ ...formData, [field.key]: e.target.value })
                 }
-                className="w-full bg-white border border-border px-6 py-4 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary transition-colors duration-300 rounded-sm font-light"
+                className="w-full bg-white border border-border px-6 py-4 text-sm text-foreground placeholder:text-muted-foreground/90 focus:outline-none focus:border-primary transition-colors duration-300 rounded-sm font-light"
               />
             ))}
 
@@ -144,7 +145,7 @@ const Contact = () => {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              className="w-full bg-white border border-border px-6 py-4 text-sm text-foreground placeholder:text-muted-foreground/60 focus:outline-none focus:border-primary transition-colors duration-300 resize-none rounded-sm font-light"
+              className="w-full bg-white border border-border px-6 py-4 text-sm text-foreground placeholder:text-muted-foreground/90 focus:outline-none focus:border-primary transition-colors duration-300 resize-none rounded-sm font-light"
             />
 
             {/* Submit Button */}
@@ -152,7 +153,7 @@ const Contact = () => {
               type="submit"
               whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(26,43,66,0.3)" }}
               whileTap={{ scale: 0.97 }}
-              className="w-full px-8 py-4 text-xs font-semibold tracking-[0.15em] uppercase transition-all duration-300 rounded-sm text-white"
+              className="w-full font-poppins px-8 py-4 text-xs font-semibold tracking-[0.15em] uppercase transition-all duration-300 rounded-sm text-white"
               style={{ backgroundColor: "#1A2B42" }}
             >
               Send Message

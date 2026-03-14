@@ -59,7 +59,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
-          className="font-body text-base md:text-lg text-white max-w-xl mx-auto mb-14 leading-relaxed font-regular"
+          className="font-sans text-base md:text-lg text-white max-w-xl mx-auto mb-14 leading-relaxed font-regular"
         >
           We build powerful web applications and intelligent AI marketing
           automation systems that help startups and small businesses attract
@@ -74,7 +74,7 @@ const Hero = () => {
         >
           <button
             onClick={scrollToProjects}
-            className="bg-[#1A2B42] text-white px-10 py-4 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[#1A2B42]/90 transition-all duration-300 font-body rounded-sm hover:shadow-lg"
+            className="bg-[#1A2B42] font-poppins text-white px-10 py-4 text-xs font-semibold tracking-[0.15em] uppercase hover:bg-[#1A2B42]/90 transition-all duration-300 font-body rounded-sm hover:shadow-lg"
           >
             View Our Work
           </button>

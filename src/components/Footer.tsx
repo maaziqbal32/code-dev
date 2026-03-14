@@ -35,7 +35,7 @@ const Footer = () => {
               Code<span className="text-primary">Dev</span>
             </Link>
 
-            <p className="font-body text-xs sm:text-sm text-background/40 mt-5 leading-[1.8] font-light">
+            <p className="font-body text-xs sm:text-base text-background/90 mt-5 leading-[1.8] font-light">
               We help startups and small businesses grow with powerful web
               applications and AI marketing automation solutions.
             </p>
@@ -44,11 +44,11 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h4 className="font-body text-xs sm:text-sm  uppercase tracking-[0.2em] text-background/60 mb-6 font-semibold">
+            <h4 className="font-body text-xs sm:text-base  uppercase tracking-[0.2em] text-background mb-6 font-semibold">
               Navigation
             </h4>
 
-            <div className="space-y-4">
+            <div className="space-y-2">
               {["Home", "About", "Services", "Testimonials", "Contact"].map((item) => {
                 const href = item === "Home" ? "/" : `/#${item.toLowerCase()}`;
                 return (
@@ -56,7 +56,7 @@ const Footer = () => {
                     key={item}
                     to={href}
                     onClick={() => handleNavClick(href)}
-                    className="block font-body text-sm text-background/40 hover:text-primary transition-colors duration-300 font-light"
+                    className="block font-body text-base text-background/70 hover:text-primary transition-colors duration-300 font-light"
                   >
                     {item}
                   </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-background/60 mb-6 font-semibold">
+            <h4 className="font-body text-xs sm:text-base uppercase tracking-[0.2em] text-background mb-6 font-semibold">
               Services
             </h4>
 
@@ -79,7 +79,7 @@ const Footer = () => {
                 "Startup Growth Solutions",
                 "Business Process Automation",
               ].map((item) => (
-                <p key={item} className="font-body text-sm text-background/40 font-light">
+                <p key={item} className="font-body text-base text-background/70 font-light">
                   {item}
                 </p>
               ))}
@@ -89,12 +89,12 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-body text-xs sm:text-sm uppercase tracking-[0.2em] text-background/60 mb-6 font-semibold">
+            <h4 className="font-body text-xs sm:text-base uppercase tracking-[0.2em] text-background mb-6 font-semibold">
               Contact
             </h4>
 
-            <div className="space-y-4 font-body text-sm text-background/40 font-light">
-              <p>hello@growthai.com</p>
+            <div className="space-y-4 font-body text-base text-background/70 font-light">
+              <p>devcodes.system@gmail.com</p>
               <p>+92 336 8531533</p>
               <p>Lahore, Pakistan</p>
             </div>
