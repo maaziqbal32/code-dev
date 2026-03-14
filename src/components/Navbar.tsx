@@ -57,14 +57,14 @@ const Navbar = () => {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex h-24 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
 
           {/* LOGO SECTION */}
           <Link to="/" className="flex flex-col items-center gap-1 group">
             <img
               src="/cd-final.png"
               alt="devcode logo"
-              className="h-16 sm:h-20 w-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
                 key={link.href}
                 to={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className={`text-xs font-medium tracking-[0.15em] uppercase transition-colors duration-300 ${
+                className={`text-xs  tracking-[0.1em] uppercase transition-colors duration-300 ${
                   scrolled
                     ? "text-foreground hover:text-primary hover:border-b hover:border-primary"
                     : "text-white hover:text-primary hover:border-b hover:border-primary "
@@ -88,7 +88,7 @@ const Navbar = () => {
             <Link
               to="/#contact"
               onClick={() => handleNavClick("/#contact")}
-              className={`ml-4 px-6 py-3.5 text-xs font-semibold tracking-[0.1em] rounded-sm transition-all duration-300 ${
+              className={`ml-4 px-6 py-2.5 text-xs font-semibold tracking-[0.1em] rounded-sm transition-all duration-300 ${
                 scrolled
                   ? "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-md"
                   : "bg-white text-black hover:bg-white/90 hover:shadow-md hover:text-white hover:bg-black"
