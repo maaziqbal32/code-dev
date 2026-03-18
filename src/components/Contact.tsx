@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const WHATSAPP_NUMBER = "923096140401";
+const WHATSAPP_NUMBER = "+447347631564";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20I%20am%20interested%20in%20AI%20Marketing%20Automation%20or%20Web%20Application%20Development.`;
 
 
@@ -81,7 +81,7 @@ const Contact = () => {
               <div className="flex items-center font-poppins gap-5">
                 <Phone className="text-primary" size={18} strokeWidth={1.5} />
                 <span className="text-sm text-foreground font-light">
-                  +92 336 8531533
+                  +44 7347631564
                 </span>
               </div>
 

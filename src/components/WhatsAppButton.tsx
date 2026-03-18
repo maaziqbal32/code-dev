@@ -1,9 +1,8 @@
 import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
-const WHATSAPP_NUMBER = "923368531533";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20AMZY%20Studio%2C%20I%27m%20interested%20in%20discussing%20a%20project.`;
-
+const WHATSAPP_NUMBER = "+447347631564";
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Hello%20CodeDev%20System%2C%20I%27d%20like%20to%20discuss%20a%20software%20project%20with%20you.`;
 const WhatsAppButton = () => {
   return (
     <motion.a

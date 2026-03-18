@@ -95,7 +95,7 @@ const Footer = () => {
 
             <div className="space-y-4 font-body text-base text-background/70 font-light">
               <p>devcodes.system@gmail.com</p>
-              <p>+92 336 8531533</p>
+              <p>+44 7347631564</p>
               <p>Lahore, Pakistan</p>
             </div>
           </div>
